@@ -20,3 +20,15 @@
 | `decoder_test.v` | Decoder 模块的仿真测试文件 |
 
 ---
+
+## 🧩 IP Core 模块说明（Vivado 集成）
+
+| IP 核名           | 功能描述 |
+|------------------|----------|
+| `prgrom`         | 指令存储器 ROM，连接 `IFetch`，用于加载程序 |
+| `RAM`            | 数据内存，连接 `DataMem` 与 `MemOrIO`，支持读写 |
+| `uart_ips`       | 串口通信模块，支持 UART 程序加载 |
+| `clk_wiz_0`      | 时钟管理模块，生成 UART 所需 10MHz 时钟 |
+| `blk_mem_gen_0`  | Block RAM 生成器，用于 RAM / ROM 实现 |
+
+---
